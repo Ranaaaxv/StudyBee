@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Study Bee Website</title>
+</head>
+
+
+<body class="bg-bbyblue">
+    <div class="container wrapper d-flex align-items-center justify-content-center">
+        <div class="sign-in-page bg-white b-rd-3 d-l-flex">
+            <div class="header p-relative">
+                <img src="img/logonama.png" alt="logo" width="170px" height="90px">
+                <p>
+                    Study Bee, is a global learning and social platform where many students and teachers connect and learn together.
+                    
+                </p>
+                <div class="right d-none d-l-block">
+                    <img src="img/cm-main-img.png" alt="main" width="450px" height="300px">
+                </div>
+            </div>
+            <div class="main p-relative">
+                <div class="switcher d-flex align-items-center">
+                    <a href="#" class="sign-in c-black fs-14 active" data-section="sign-in-sec">Sign in</a>
+                    <a href="#" class="sign-up c-black fs-14" data-section="sign-up-sec">Sign up</a>
+                </div>
+                <div class="sec sign-in-sec d-none active">
+                    <h3 class="c-balck p-relative">Sign in</h3>
+                    <form class="d-flex flex-d-column" action="home.html">
+                        <div class="form-group">
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" class="outline-0 b-0 w-100" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" class="outline-0 b-0 w-100" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center justify-content-space-between">
+                                <div class="check d-flex align-items-center">
+                                    <input type="checkbox" name="" id="rm" class="d-none">
+                                    <label for="rm">
+                                        <span class="p-relative b-rd-50 pointer"></span>
+                                    </label>
+                                    <small class="c-black fs-14">Remember me</small>
+                                </div>
+                                <a href="#" class="t-capitalize c-black fs-14">forget password?</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn bg-bbyblue">Sign in</button>
+                        </div>
+                    </form>
+                    <div class="login-resources">
+                        <h4 class="t-uppercase c-black">login via social account</h4>
+                        <div class="social d-flex align-items-center flex-wrap-wrap flex-d-xl-column">
+                            <a href="#" class="t-capitalize c-white d-flex align-items-center b-rd-3">
+                                <i class="fab fa-facebook-f"></i>
+                                login via facebook
+                            </a>
+                            <a href="#" class="t-capitalize c-white d-flex align-items-center b-rd-3">
+                                <i class="fab fa-twitter"></i>
+                                login via twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sign-up-sec d-none">
+                    <h3 class="c-balck p-relative">Sign up</h3>
+                    <form class="d-flex flex-d-column">
+                        <div class="form-group">
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                            <input type="text" placeholder="First name" class="outline-0 b-0 w-100" required>
+                                        </div>
+                                    <div class="col">
+                                        <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                            <input type="text" placeholder="Last name" class="outline-0 b-0 w-100" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <input class="outline-0 b-0 w-100" type="email" id="email" name="email"
+                                    placeholder="Email (name@example.com)" required="true">
+                            </div>
+
+                            <div class="form-group fs-14">
+                                <label for="birth">Date of Birth</label>
+                                <input class="form-control" type="date" id="date" name="date"
+                                    placeholder="mm/dd/yy" required="true">
+                            </div>
+
+                            <div class="form-group fs-14">
+                                <div class="row">
+                                    <label>Gender</label>
+                                    <div class="outline-0 b-0 w-100">
+                                        <label for="gender fs-14">Female</label>
+                                        <input type="radio" id="Female" name="gender" class="form-control"
+                                            placeholder="Female">
+                                        <label for="gender">Male</label>
+                                        <input type="radio" id="Male" name="gender" class="form-control"
+                                            placeholder="Male" required="true">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <input class="outline-0 b-0 w-100" type="text" id="address" name="address"
+                                    placeholder="Address" required="true">
+                            </div>
+
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <input class="outline-0 b-0 w-100" type="number" id="number" name="number"
+                                    placeholder="Phone Number" required="true">
+                            </div>
+                            
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <input class="outline-0 b-0 w-100" type="password" id="password" name="password"
+                                    placeholder="Your password" required="true" onchange='check_pass()'>
+                            </div>
+
+                            <div class="inner-input fs-14 lightGray d-flex align-items-center">
+                                <input class="outline-0 b-0 w-100" type="password" id="passwordConfirm" name="passwordConfirm"
+                                    placeholder="Your password again" required="true" onchange='check_pass()'>
+                            </div>
+
+                            
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="btn bg-bbyblue t-capitalize">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
