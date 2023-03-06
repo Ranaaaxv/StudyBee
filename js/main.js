@@ -40,7 +40,7 @@ function createHeader() {
                             </a>
                         </li>
                         <li>
-                            <a href="likes.html" class="t-capitalize c-white d-xl-flex flex-d-xl-column align-items-xl-center fs-14">
+                            <a href="Likes.html" class="t-capitalize c-white d-xl-flex flex-d-xl-column align-items-xl-center fs-14">
                                 <i class="far fa-bookmark"></i>
                                 likes
                             </a>
